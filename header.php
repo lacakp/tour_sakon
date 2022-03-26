@@ -7,6 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+
+	<link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,15 +45,43 @@
 					</li>
 
 
-					<li class="nav-item">
-						<a class="nav-link" href="signin.php">เข้าสู่ระบบ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="signup.php">สมัครสมาชิก</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="calendar.html">บัญชีของฉัน</a>
-					</li>
+					<?php session_start(); ?>
+
+					<?php
+					if (isset($_SESSION['UserID']) && $_SESSION['status'] == 1) {
+					?>
+						<li class="nav-item">
+							<a class="nav-link" href="./pages/package/"> Package Management </a>
+						</li>
+					<?php
+					}
+					?>
+
+
+					<?php
+					if (!isset($_SESSION['UserID'])) {
+					?>
+						<li class="nav-item">
+							<a class="nav-link" href="signin.php">เข้าสู่ระบบ </a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="signup.php">สมัครสมาชิก</a>
+						</li>
+					<?php
+					} else {
+					?>
+						<li class="nav-item">
+							<a class="nav-link" href="calendar.html">บัญชีของฉัน</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="signout.php">ออกจากระบบ</a>
+						</li>
+					<?php
+					}
+					?>
+
+
 
 
 				</ul>
