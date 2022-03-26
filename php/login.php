@@ -19,13 +19,11 @@
         $_SESSION['UserID'] = $row['user_id'];
         $_SESSION['email'] = $row['email'];
         $_SESSION['status'] = $row['status'];
-
         echo "PASS";
     }
 
     mysqli_free_result($result);
     mysqli_close($conn);
-
 
 
 
