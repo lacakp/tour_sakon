@@ -51,18 +51,22 @@
 					if (isset($_SESSION['UserID']) && $_SESSION['status'] == 1) {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/package/"> Package Management </a>
+							<a class="nav-link" href="./pages/package"> Package Management </a>
 						</li>
 					<?php
 					}
 					?>
 
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/all_package"> ทัวร์ทั้งหมด </a>
+					</li>
 
 					<?php
 					if (!isset($_SESSION['UserID'])) {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="signin.php">เข้าสู่ระบบ </a>
+							<a class="nav-link" href="signin.php"> เข้าสู่ระบบ </a>
+
 						</li>
 
 						<li class="nav-item">
@@ -93,5 +97,13 @@
 			</div>
 		</div>
 	</nav>
+
+	<script>
+		function redirect($url) {
+
+			header('Location: '.$url);
+
+		}
+	</script>
 	<!-- ============================ NavbarBand ==================================== -->
 	<main>
