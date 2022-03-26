@@ -47,7 +47,7 @@ require "header.php"
 				} else if (msg == "Duplicated") {
 					$("#msgErrorUsername").text("ชื่อผู้ใช้ซ้ำ");
 				} else if (msg == "COMPLETE") {
-					location.replace("signin.php"); // ไปหน้า signin.php
+					location.replace("index.php") // ไปหน้า signin.php
 				}
 			});
 		}
