@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+
+	<link rel="stylesheet" href="./assets/css/style.css">
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,7 +18,7 @@
 	<!-- ============================ NavbarBand ==================================== -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a class="navbar-brand" href="index.php">Navbar</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -29,7 +31,7 @@
 					<li class="nav-item">
 						<a class="nav-link" href="calendar.html">ปฏิทิน</a>
 					</li>
-					
+
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ตรวจสอบสถานะ</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -48,7 +50,7 @@
 						<a class="nav-link" href="calendar.html">บัญชีของฉัน</a>
 					</li>
 
-					
+
 				</ul>
 
 				<form class="d-flex">
@@ -59,5 +61,4 @@
 		</div>
 	</nav>
 	<!-- ============================ NavbarBand ==================================== -->
-<main>
-
+	<main>
