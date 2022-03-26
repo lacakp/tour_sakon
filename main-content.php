@@ -9,20 +9,20 @@
 		<div class="row text-center">
 			<div class="col-md-4 pb-1 pb-md-0">
 				<div class="card">
-					<img class="card-img-top" src="./assets/images/400X200.gif" alt="Card image cap">
+					<img class="card-img-top" src="./assets/images/w.jpg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">วัดพระพระธาตุเชิงชุมวรวิหาร</h5>
+						<p class="card-text">วัดพระธาตุเชิงชุม ตั้งอยู่ถนนเจริญเมือง อำเภอเมือง จังหวัดสกลนคร</p>
 						<a href="#" class="btn btn-primary">Add to Cart</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 pb-1 pb-md-0">
 				<div class="card">
-					<img class="card-img-top" src="./assets/images/400X200.gif" alt="Card image cap">
+					<img class="card-img-top" src="./assets/images/B.jpg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						<h5 class="card-title">วัดใหม่บ้านตาล (พระบรมธาตุเจดีย์ศรีมงคล)</h5>
+						<p class="card-text">วัดใหม่บ้านตาล ตำบลโคกสี อำเภอสว่างแดนดิน จังหวัดสกลนคร</p>
 						<a href="#" class="btn btn-primary">Add to Cart</a>
 					</div>
 				</div>

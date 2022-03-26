@@ -60,8 +60,10 @@ require('header.php');
 <div class="section-login">
 	<section class="form-signin">
 		<form>
+            
 			<img class="mb-4 align-center" src="assets/images/main.jpg" alt="" width="auto" height="400">
-			<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+			
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
 			<div class="form-floating">
 				<input type="text" name="username" id="emailInput" class="form-control"  placeholder="name@example.com">
