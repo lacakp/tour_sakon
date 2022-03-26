@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2022 at 01:13 PM
+-- Generation Time: Mar 26, 2022 at 11:22 AM
 -- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- PHP Version: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,21 @@ SET time_zone = "+00:00";
 --
 -- Database: `tour_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_admin`
+--
+
+CREATE TABLE `tb_admin` (
+  `admin_id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `age` varchar(100) NOT NULL,
+  `passwrd` varchar(100) NOT NULL,
+  `phone` int(10) NOT NULL,
+  `gmail` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -79,11 +94,18 @@ CREATE TABLE `tb_user` (
 INSERT INTO `tb_user` (`user_id`, `name`, `bdate`, `address`, `email`, `password`, `phone`, `status`) VALUES
 (1, 'akira ', '0000-00-00', '', 'akira@gmail.com', '7a59e9017b94a3d9f0892a2a2f52c6d0a8442b6d79e253de9f6d3ea14e520c7f', 0, 0),
 (2, 'akira2', '0000-00-00', '', 'akira2@gmail.com', '7a59e9017b94a3d9f0892a2a2f52c6d0a8442b6d79e253de9f6d3ea14e520c7f', 0, 0),
-(3, 'akira3', '0000-00-00', '', 'akira3@gmail.com', '7a59e9017b94a3d9f0892a2a2f52c6d0a8442b6d79e253de9f6d3ea14e520c7f', 0, 0);
+(3, 'akira3', '0000-00-00', '', 'akira3@gmail.com', '7a59e9017b94a3d9f0892a2a2f52c6d0a8442b6d79e253de9f6d3ea14e520c7f', 0, 0),
+(7, 'tuio', '0000-00-00', '', 'tuio@gmail.com', '7a59e9017b94a3d9f0892a2a2f52c6d0a8442b6d79e253de9f6d3ea14e520c7f', 0, 0);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tb_admin`
+--
+ALTER TABLE `tb_admin`
+  ADD PRIMARY KEY (`admin_id`);
 
 --
 -- Indexes for table `tb_order`
@@ -110,6 +132,12 @@ ALTER TABLE `tb_user`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_admin`
+--
+ALTER TABLE `tb_admin`
+  MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tb_order`
 --
 ALTER TABLE `tb_order`
@@ -125,7 +153,7 @@ ALTER TABLE `tb_package`
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

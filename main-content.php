@@ -11,6 +11,7 @@ $result = mysqli_query($conn, $sql);
 <div class="container">
 	<?php if (mysqli_num_rows($result) > 0) : ?>
 		<div class="row text-center">
+
 			<?php $count = 0 ?>
 			<?php while ($row = mysqli_fetch_assoc($result)) : ?>
 				<?php
@@ -56,6 +57,25 @@ $result = mysqli_query($conn, $sql);
 					<div class="media-body">
 						<h5 class="mt-0 mb-1">List-based media object</h5>
 						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="./assets/images/w.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">วัดพระพระธาตุเชิงชุมวรวิหาร</h5>
+						<p class="card-text">วัดพระธาตุเชิงชุม ตั้งอยู่ถนนเจริญเมือง อำเภอเมือง จังหวัดสกลนคร</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card">
+					<img class="card-img-top" src="./assets/images/B.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">วัดใหม่บ้านตาล (พระบรมธาตุเจดีย์ศรีมงคล)</h5>
+						<p class="card-text">วัดใหม่บ้านตาล ตำบลโคกสี อำเภอสว่างแดนดิน จังหวัดสกลนคร</p>
+						<a href="#" class="btn btn-primary">Add to Cart</a>
+
 					</div>
 				</li>
 				<li class="media my-4">
