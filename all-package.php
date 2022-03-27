@@ -1,30 +1,18 @@
-
 <?php
 require_once('./php/connectdb.php');
 $sql = "SELECT * FROM `tb_package`";
 $result = mysqli_query($conn, $sql);
-require "header.php";
+require "./header.php";
 ?>
-
 <h1><?php $result ?></h1>
 <!-- ============================ Tour ==================================== -->
 <hr>
 <h2 class="text-center">ทริปทัวร์ที่แนะนำ</h2>
 <hr>
-
 <div class="container">
 	<?php if (mysqli_num_rows($result) > 0) : ?>
 		<div class="row text-center">
-
-			<?php $count = 0 ?>
 			<?php while ($row = mysqli_fetch_assoc($result)) : ?>
-				<?php
-				if ($count >= 6) :
-					break;
-				endif;
-				$count++;
-				?>
-
 				<div class="col-md-4 pb-1 pb-md-0">
 					<div class="card">
 						<img class="card-img-top" src=<?php echo $row['image'] ?> alt="Card image cap" height="400px" width="100px">
@@ -35,6 +23,7 @@ require "header.php";
 							<?php if (isset($_SESSION['UserId'])) : ?>
 								<a href="#" class="btn btn-primary">Add to Cart</a>
 							<?php endif; ?>
+
 						</div>
 					</div>
 				</div>
@@ -44,8 +33,6 @@ require "header.php";
 		echo "<p class='mt-5'>ไม่มีข้อมูลในฐานข้อมูล</p>";
 	endif; ?>
 </div>
-
-
 <?php
-require "footer.php";
+require "./footer.php";
 ?>
