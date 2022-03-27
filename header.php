@@ -30,7 +30,7 @@
 
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link" href="rent.php">จอง <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="rent.php">การจองของฉัน<span class="sr-only"></span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="calendar.html">ปฏิทิน</a>

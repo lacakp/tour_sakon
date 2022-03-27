@@ -30,11 +30,10 @@ require "header.php";
 						<img class="card-img-top" src=<?php echo $row['image'] ?> alt="Card image cap" height="400px" width="100px">
 						<div class="card-body">
 							<h5 class="card-title">สถานที่ <?php echo $row['place'] ?> </h5>
-							<p class="card-text">จำนวนคน <?php echo $row['count_people'] ?></p>
-							<p class="card-text">ราคา : <span class="price"><?php echo $row['price'] ?></span></p>
-							<?php if (isset($_SESSION['UserId'])) : ?>
-								<a href="#" class="btn btn-primary">Add to Cart</a>
-							<?php endif; ?>
+							<p class="card-text"><h3>จำนวนคน <?php echo $row['count_people'] ?></h3></p>
+							<p class="card-text"><h3>ราคา : <span class="price"><?php echo $row['price'] ?></h3></span></p>
+							
+							<a href="./information.php?id=<?php echo $row['package_id'] ?>" class="btn btn-warning"><h2> รายละเอียดเพิ่มเติม </h2></a>
 						</div>
 					</div>
 				</div>
