@@ -1,8 +1,6 @@
 <?php
 require('header.php');
 ?>
-
-
 <script>
     function signin() {
         var email = $("#emailInput").val();
@@ -72,7 +70,7 @@ require('header.php');
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">
-                <input type="text" name="username" id="emailInput" class="form-control" placeholder="name@example.com">
+                <input type="text" name="email" id="emailInput" class="form-control" placeholder="name@example.com">
                 <label for="emailInput">Email address</label>
             </div>
             <div class="form-floating">
@@ -85,7 +83,7 @@ require('header.php');
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" onclick="signin()">Sign in</button>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
             <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
         </form>
     </section>

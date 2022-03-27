@@ -51,32 +51,32 @@
 					if (isset($_SESSION['UserID']) && $_SESSION['status'] == 1) {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="./pages/package"> Package Management </a>
+							<a class="nav-link" href="./package.php"> Package Management </a>
 						</li>
 					<?php
 					}
 					?>
 
 					<li class="nav-item">
-						<a class="nav-link" href="./pages/all_package"> ทัวร์ทั้งหมด </a>
+						<a class="nav-link" href="./all-package.php"> ทัวร์ทั้งหมด </a>
 					</li>
 
 					<?php
 					if (!isset($_SESSION['UserID'])) {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="signin.php"> เข้าสู่ระบบ </a>
+							<a class="nav-link" href="./signin.php"> เข้าสู่ระบบ </a>
 
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="signup.php">สมัครสมาชิก</a>
+							<a class="nav-link" href="./signup.php">สมัครสมาชิก</a>
 						</li>
 					<?php
 					} else {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="calendar.html">บัญชีของฉัน</a>
+							<a class="nav-link" href="./profile">บัญชีของฉัน</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" href="signout.php">ออกจากระบบ</a>

@@ -1,5 +1,5 @@
 <?php
-require_once('../../../php/connectdb.php');
+require_once('./connectdb.php');
 if (isset($_POST['submit'])) {
 
 	$place = mysqli_real_escape_string($conn, $_POST['place']);
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 		header('Refresh:0; url= ../');
 	} else {
 		echo '<script> alert("เพิ่มข้อมูลไม่สำเร็จ")</script>';
-		header('Refresh:0; url= ../form-create.php');
+		header('Refresh:0; url= ../package-form-create.php');
 	}
 }
 mysqli_close($conn);

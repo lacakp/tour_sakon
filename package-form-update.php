@@ -1,5 +1,5 @@
 <?php 
-    require_once('../../php/connectdb.php');
+    require_once('./php/connectdb.php');
     if(!isset($_GET['id'])){
         header("location: ./");
         exit();
@@ -25,7 +25,7 @@
             <div class="col-md-10">
                 <h1 class="mb-5"> Update  Package </h1>
                 <h3>แก้ไขรายการแพคเกจ</h3>
-                <form class="row gy-4" action="php/update.php" method="POST">
+                <form class="row gy-4" action="php/package-update.php" method="POST">
                     <div class="col-md-12">
                         <label for="place" class="form-label">สถานที่</label>
                         <input type="text" class="form-control" id="place" name="place" placeholder="ชื่อแพคเกจ" value="<?php echo $row['place'] ?>"required>

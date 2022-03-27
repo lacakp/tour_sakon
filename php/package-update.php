@@ -1,6 +1,6 @@
 
 <?php 
-require_once('../../../php/connectdb.php');
+require_once('./connectdb.php');
 
 if (isset($_POST['submit'])) {
 	$id =  $_POST['id'];
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 		header('Refresh:0; url= ../');
 	} else {
 		echo '<script> alert("แก้ไขข้อมูลไม่สำเร็จ")</script>';
-		header('Refresh:0; url= ../form-update.php');
+		header('Refresh:0; url= ../package-form-update.php');
 	}
 }
 mysqli_close($conn);

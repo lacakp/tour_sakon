@@ -1,3 +1,4 @@
+
 <?php
 require_once('./php/connectdb.php');
 $sql = "SELECT * FROM `tb_package`";
@@ -34,7 +35,6 @@ require "header.php";
 							<?php if (isset($_SESSION['UserId'])) : ?>
 								<a href="#" class="btn btn-primary">Add to Cart</a>
 							<?php endif; ?>
-
 						</div>
 					</div>
 				</div>

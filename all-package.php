@@ -1,8 +1,8 @@
 <?php
-require_once('../../php/connectdb.php');
+require_once('./php/connectdb.php');
 $sql = "SELECT * FROM `tb_package`";
 $result = mysqli_query($conn, $sql);
-require "../../header.php";
+require "./header.php";
 ?>
 <h1><?php $result ?></h1>
 <!-- ============================ Tour ==================================== -->
@@ -34,5 +34,5 @@ require "../../header.php";
 	endif; ?>
 </div>
 <?php
-require "../../footer.php";
+require "./footer.php";
 ?>

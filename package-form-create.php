@@ -15,7 +15,7 @@
             <div class="col-md-10">
                 <h1 class="mb-5"> Add package(From Submit) </h1>
                 <h3>เพิ่มแพคเกจ</h3>
-                <form class="row gy-4" action="php/create.php" method="POST">
+                <form class="row gy-4" action="php/package-create.php" method="POST">
                     <div class="col-md-12">
                         <label for="place" class="form-label">ชื่อสถานที่</label>
                         <input type="text" class="form-control" id="place" name="place" placeholder="ชื่อสถานที่" required>

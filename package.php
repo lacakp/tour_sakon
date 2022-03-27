@@ -1,5 +1,5 @@
 <?php 
-    require('../../php/connectdb.php');
+    require('./php/connectdb.php');
     $sql = "SELECT * FROM tb_package";
     $result = mysqli_query($conn, $sql);
 ?>
@@ -19,7 +19,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h1 class="mb-5"> Package Page(From Submit) </h1>
-                <a href="form-create.php" class="btn btn-primary"  >เพิ่มรายการสินค้า</a>
+                <a href="package-form-create.php" class="btn btn-primary"  >เพิ่มรายการสินค้า</a>
                 <span class="float-end" >มีข้อมูลสินค้าทั้งหมด <?php echo mysqli_num_rows($result) ?> รายการ </span>     
             </div>  
             <div class="col-md-10">
@@ -50,8 +50,8 @@
                                                 data-bs-toggle="modal" 
                                                 data-bs-target="#my-modal<?php echo $row['package_id'] ?>" 
                                                 style="width: 105px;"> รายละเอียด </button>
-                                        <a href="form-update.php?id=<?php echo $row['package_id'] ?>" class="btn btn-warning"> แก้ไข </a>
-                                        <a href="php/delete.php?id=<?php echo $row['package_id'] ?>" class="btn btn-danger"> ลบ </a>
+                                        <a href="./package-form-update.php?id=<?php echo $row['package_id'] ?>" class="btn btn-warning"> แก้ไข </a>
+                                        <a href="./php/package-delete.php?id=<?php echo $row['package_id'] ?>" class="btn btn-danger"> ลบ </a>
                                     </div>
                                 </td>
                             </tr>
