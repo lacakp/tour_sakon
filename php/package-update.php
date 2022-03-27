@@ -22,10 +22,10 @@ if (isset($_POST['submit'])) {
 
 	if ($result) {
 		echo $result.'<script> alert("แก้ไขข้อมูลเสร็จเรียบร้อย")</script>';
-		header('Refresh:0; url= ../');
+		header('Refresh:0; url= ../package.php');
 	} else {
 		echo '<script> alert("แก้ไขข้อมูลไม่สำเร็จ")</script>';
-		header('Refresh:0; url= ../package-form-update.php');
+		header('Refresh:0; url= ../package.php');
 	}
 }
 mysqli_close($conn);

@@ -14,10 +14,10 @@ if (isset($_POST['submit'])) {
 	$result = mysqli_query($conn, $sql);
 	if ($result) {
 		echo '<script> alert("เพิ่มข้อมูลเสร็จเรียบร้อย")</script>';
-		header('Refresh:0; url= ../');
+		header('Refresh:0; url= ../package.php');
 	} else {
 		echo '<script> alert("เพิ่มข้อมูลไม่สำเร็จ")</script>';
-		header('Refresh:0; url= ../package-form-create.php');
+		header('Refresh:0; url= ../package.php');
 	}
 }
 mysqli_close($conn);

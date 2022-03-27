@@ -70,7 +70,7 @@ require "header.php"
 				<div id="msgErrorName" style="color: red;"></div>
 			</div>
 			<div class="form-floating">
-				<input type="text" name="Email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+				<input type="text" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
 				<label for="inputEmail">Email</label>
 				<div id="msgErrorEmail" style="color: red;"></div>
 			</div>

@@ -1,19 +1,13 @@
 <?php 
     require('./php/connectdb.php');
+    require('./header.php');
+
     $sql = "SELECT * FROM tb_package";
     $result = mysqli_query($conn, $sql);
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Package Page</title>
-    <!-- favicons -->
-    <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
-    <!-- Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">

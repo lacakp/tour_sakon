@@ -1,5 +1,6 @@
 <?php 
     require_once('./php/connectdb.php');
+	require "./header.php";
     if(!isset($_GET['id'])){
         header("location: ./");
         exit();
@@ -54,7 +55,7 @@
                         <button type="submit" name="submit" class="btn btn-primary d-block mx-auto">บันทึกการเปลี่ยนแปลง</button>
                     </div>
                 </form>
-                <a href="./">ย้อนกลับ</a>
+                <a href="./package.php">ย้อนกลับ</a>
             </div>  
         </div>
     </div>

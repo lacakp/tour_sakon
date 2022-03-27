@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -6,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-
+	
 
 	<link rel="stylesheet" href="plugins/toastr/toastr.min.css">
 
@@ -21,7 +22,7 @@
 	<!-- ============================ NavbarBand ==================================== -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="index.php">Navbar</a>
+			<a class="navbar-brand" href="index.php">หน้าหลัก</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -76,7 +77,7 @@
 					} else {
 					?>
 						<li class="nav-item">
-							<a class="nav-link" href="./profile">บัญชีของฉัน</a>
+							<a class="nav-link" href="./profile.php">บัญชีของฉัน</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" href="signout.php">ออกจากระบบ</a>

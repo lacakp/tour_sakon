@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+
+<?php 
+	require "header.php";
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add package</title>
+    <title>Add package</title> 
     <!-- favicons -->
     <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
     <!-- Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5">
@@ -41,7 +46,7 @@
                         <button type="submit" name="submit" class="btn btn-primary d-block mx-auto">บันทึกการเปลี่ยนแปลง</button>
                     </div>
                 </form>
-                <a href="./">ย้อนกลับ</a>
+                <a href="./package.php">ย้อนกลับ</a>
             </div>  
         </div>
     </div>
