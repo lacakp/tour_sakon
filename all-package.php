@@ -34,6 +34,3 @@ require "./header.php";
 		echo "<p class='mt-5'>ไม่มีข้อมูลในฐานข้อมูล</p>";
 	endif; ?>
 </div>
-<?php
-require "./footer.php";
-?>

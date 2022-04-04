@@ -9,8 +9,12 @@ require "header.php";
 <h1><?php $result ?></h1>
 <!-- ============================ Tour ==================================== -->
 <hr>
-<h2 class="text-center">ทริปทัวร์ที่แนะนำ</h2>
+<h2 class="text-center">สกลนครทัวร์</h2>
 <hr>
+
+<!-- <hr>
+<h2 class="text-center">ทริปทัวร์ที่แนะนำ</h2>
+<hr> -->
 
 <div class="container">
 	<?php if (mysqli_num_rows($result) > 0) : ?>
@@ -45,6 +49,3 @@ require "header.php";
 </div>
 
 
-<?php
-require "footer.php";
-?>

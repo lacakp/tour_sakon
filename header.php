@@ -29,30 +29,41 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="rent.php">การจองของฉัน<span class="sr-only"></span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="calendar.html">ปฏิทิน</a>
-					</li>
+
+					
+					
 
 
-					<li class="nav-item dropdown">
+					<!-- <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ตรวจสอบสถานะ</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">การจอง</a>
 							<a class="dropdown-item" href="#">ใบเสร็จ</a>
 						</div>
-					</li>
+					</li> -->
 
 
 					<?php session_start(); ?>
+
+					<?php
+					if (isset($_SESSION['UserID']) && $_SESSION['status'] == 0) {
+					?>
+						<li class="nav-item">
+						<a class="nav-link" href="rent.php">การจองของฉัน<span class="sr-only"></span></a>
+						</li>
+					<?php
+					}
+					?>
+
 
 					<?php
 					if (isset($_SESSION['UserID']) && $_SESSION['status'] == 1) {
 					?>
 						<li class="nav-item">
 							<a class="nav-link" href="./package.php"> Package Management </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="./admin-order.php"> admin order </a>
 						</li>
 					<?php
 					}
@@ -91,10 +102,7 @@
 
 				</ul>
 
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+				
 			</div>
 		</div>
 	</nav>

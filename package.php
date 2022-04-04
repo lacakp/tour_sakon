@@ -58,7 +58,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-											<img src="<?php echo $row['image'] ?>" alt="" srcset="" width="200px" height="300px">
+											<img src="<?php echo $row['image'] ?>" alt="" srcset="" width="450px" height="300px">
                                             <p class="mt-3">ชื่อสินค้า: <?php echo $row['place'] ?></p>
                                             <p>ราคา: <?php echo $row['price'] ?> บาท</p>
                                             <p>จำนวน: <?php echo $row['count_people'] ?> รายการ</p>
