@@ -39,9 +39,9 @@ require('header.php');
 <div class="section-login">
 
     <section class="form-signin">
-        <form>
+        <form> 
 
-            <img class="mb-4 align-center" src="assets/images/main.jpg" alt="" width="auto" height="400">
+           <img class="mb-4 align-center" src="assets/images/main.jpg" alt="" width="auto" height="400">
 
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
